@@ -14,15 +14,7 @@ ITEM_PIPELINES = {
 }
 
 #database settings
-DATABASE = {
-    "drivername": "postgres",
-    "url": os.environ.get("POSTGRES_URL"),
-    "host": os.environ.get("POSTGRES_HOST"),
-    "port": os.environ.get("POSTGRES_PORT"),
-    "username": os.environ.get("POSTGRES_USER"),
-    "password": os.environ.get("POSTGRES_PASS"),
-    "database": os.environ.get("POSTGRES_DB"),
-}
+
 
 DATABASE_URL = os.environ.get("DATABASE_URL")
 
