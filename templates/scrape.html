@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} items {% endblock %}</h1>
+    {% for item in items %}
+        <div class='Property'>
+            <h3>{{ item[3] }} # URL - https://www.sreality.cz{{ item[0] }}</h3>
+            <i><p>{{ item[1] }}</p></i>
+            <i><p>Locality {{ item[2] }}</p></i>
+        </div>
+    {% endfor %}
+{% endblock %}
